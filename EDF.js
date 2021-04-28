@@ -49,11 +49,15 @@ function edf(processos, qnt){
   for (let i=0; i < qnt; i++){
     periodo[i] = processos[i][3];
   }
-  
+
+  let contador = list_cont;
+  for (let i=0; i < qnt; i++){
+    contador[i] = 0;
+  }
+
   console.log("Processos: ", processos);
   console.log("Deadlines: ", deadlines);
   console.log("Periodo: ", periodo, "\n");
-  let contador = list_cont;
 
   while (relogio <= 20){
     let escolhido = escolher_menor_deadline(processos, qnt, deadlines);
@@ -84,3 +88,4 @@ function edf(processos, qnt){
 }
 
 edf(processos, qnt);
+
