@@ -100,9 +100,6 @@ for (let proc=0; proc < processos.length; proc++){
   console.log(processos[proc][0], "\t\t", processos[proc][2], "\t\t", processos[proc][1], "\t\t", wt[proc], "\t\t", parseInt(tat[proc] + processos[proc][1]), "\n");
 }
 
-for (let i=0; i < processos.length; i++){
-  console.log(processos[i][0]);
-}
 
 console.log("Average Wating Time: ", avg_wt);
 console.log("Average Turn-Around Time: ", avg_tat);
