@@ -1,8 +1,6 @@
 let processos = [];
 
 function wating_time(processos){
-  /*Definindo tempo de serviço */
-  /*let tempo_servico = [0] * length(processos);*/
   let list1 = [];
   for (i=0; i<processos.length; i++){
     list1.push[0];
@@ -12,8 +10,6 @@ function wating_time(processos){
     tempo_servico[i] = 0;
   }
 
-  /*Definindo o tamanho da wating list */
-  /*let wt= [0] * length(processos);*/
   let list2 = [];
   for (i=0; i < processos.length; i++){
     list2.push[0];
@@ -58,15 +54,12 @@ function turn_around_time(processos){
 function average_tat(processos){
   let tat = turn_around_time(processos);
   let sum = tat.reduce((a,b) => a+b, 0);
-  /*Retornando o tempo médio */
   return (sum/processos.length);
 }
 
 function average_wt(processos){
-  /*Retornando o tempo de espera médio */
   let wt = wating_time(processos);
   let sum = wt.reduce((a,b) => a+b, 0);
-  /*Retornando */
   return (sum/processos.length);
 }
 
